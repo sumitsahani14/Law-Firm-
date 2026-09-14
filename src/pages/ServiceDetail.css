@@ -1,0 +1,110 @@
+.service-detail-hero {
+  background: var(--color-dark);
+  color: var(--color-warm-white);
+  padding: clamp(64px, 10vw, 120px) 0 clamp(48px, 7vw, 72px);
+}
+
+.service-detail-hero__back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: rgba(245, 243, 238, 0.65);
+  margin-bottom: 48px;
+}
+
+.service-detail-hero__back:hover {
+  color: var(--color-accent);
+}
+
+.service-detail-hero__number {
+  display: block;
+  font-family: var(--font-serif);
+  font-size: 20px;
+  color: var(--color-accent);
+  margin-bottom: 16px;
+}
+
+.service-detail-hero h1 {
+  font-size: clamp(36px, 5.5vw, 60px);
+  max-width: 760px;
+}
+
+.service-detail-hero__desc {
+  margin-top: 22px;
+  max-width: 560px;
+  font-size: 17px;
+  color: rgba(245, 243, 238, 0.72);
+  line-height: 1.75;
+}
+
+.service-detail-body__grid {
+  display: grid;
+  gap: 48px;
+}
+
+.service-detail-body h2 {
+  font-family: var(--font-serif);
+  font-size: 26px;
+  margin-bottom: 24px;
+}
+
+.service-detail-body__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.service-detail-body__list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 15.5px;
+}
+
+.service-detail-body__list svg {
+  color: var(--color-accent);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.service-detail-body__problems {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.service-detail-body__problems li {
+  font-style: italic;
+  color: var(--color-muted);
+  line-height: 1.7;
+  padding-left: 18px;
+  border-left: 2px solid var(--color-accent);
+}
+
+.service-detail-body__cta {
+  margin-top: 56px;
+  padding-top: 40px;
+  border-top: 1px solid var(--color-border);
+}
+
+.service-detail-next {
+  background: var(--color-warm-white);
+  border-top: 1px solid var(--color-border);
+}
+
+.service-detail-next__link h2 {
+  font-size: clamp(28px, 4vw, 40px);
+  margin-top: 12px;
+  transition: color var(--dur-fast) var(--ease);
+}
+
+.service-detail-next__link:hover h2 {
+  color: var(--color-accent);
+}
+
+@media (min-width: 768px) {
+  .service-detail-body__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}

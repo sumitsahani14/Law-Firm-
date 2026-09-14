@@ -1,0 +1,114 @@
+.about-philosophy__body {
+  max-width: 640px;
+  margin-left: auto;
+}
+
+.about-philosophy__body p {
+  color: var(--color-muted);
+  line-height: 1.8;
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+
+.about-approach {
+  background: var(--color-warm-white);
+}
+
+.about-approach__grid {
+  display: grid;
+  gap: 32px;
+}
+
+.about-approach__item {
+  border-top: 1px solid var(--color-border);
+  padding-top: 24px;
+}
+
+.about-approach__item h3 {
+  font-family: var(--font-serif);
+  font-size: 24px;
+}
+
+.about-approach__item p {
+  margin-top: 12px;
+  color: var(--color-muted);
+  line-height: 1.7;
+}
+
+.about-timeline__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-timeline__list li {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 24px;
+  padding: 28px 0;
+  border-top: 1px solid var(--color-border);
+}
+
+.about-timeline__list li:last-child {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.about-timeline__year {
+  font-family: var(--font-serif);
+  font-size: 22px;
+  color: var(--color-accent);
+}
+
+.about-timeline__list h3 {
+  font-size: 20px;
+  font-family: var(--font-sans);
+  font-weight: 600;
+}
+
+.about-timeline__list p {
+  margin-top: 8px;
+  color: var(--color-muted);
+  line-height: 1.7;
+  max-width: 520px;
+}
+
+.about-principles {
+  background: var(--color-dark);
+  color: var(--color-warm-white);
+}
+
+.about-principles .eyebrow { color: var(--color-accent); }
+.about-principles .section-header__title { color: var(--color-warm-white); }
+
+.about-principles__grid {
+  display: grid;
+  gap: 32px;
+}
+
+.about-principles__grid h3 {
+  font-family: var(--font-serif);
+  font-size: 26px;
+}
+
+.about-principles__grid p {
+  margin-top: 12px;
+  color: rgba(245, 243, 238, 0.68);
+  line-height: 1.7;
+}
+
+@media (min-width: 768px) {
+  .about-philosophy__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+  }
+  .about-philosophy__body { margin-left: 0; }
+  .about-approach__grid { grid-template-columns: repeat(3, 1fr); }
+  .about-principles__grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 560px) {
+  .about-timeline__list li {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+}
