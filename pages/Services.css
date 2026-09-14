@@ -1,0 +1,57 @@
+.services-list__grid {
+  display: grid;
+  gap: 24px;
+}
+
+.services-list__card {
+  display: block;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 36px 32px;
+  height: 100%;
+  transition: border-color var(--dur-fast) var(--ease), background var(--dur-fast) var(--ease);
+}
+
+.services-list__card:hover {
+  border-color: var(--color-accent);
+  background: var(--color-accent-soft);
+}
+
+.services-list__number {
+  font-family: var(--font-serif);
+  font-size: 18px;
+  color: var(--color-accent);
+}
+
+.services-list__card h2 {
+  font-size: 26px;
+  margin-top: 18px;
+}
+
+.services-list__card p {
+  margin-top: 12px;
+  color: var(--color-muted);
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+.services-list__arrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 22px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  .services-list__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .services-list__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

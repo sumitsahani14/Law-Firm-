@@ -1,0 +1,119 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  background: transparent;
+  border-bottom: 1px solid transparent;
+  transition: background var(--dur-med) var(--ease), border-color var(--dur-med) var(--ease),
+    box-shadow var(--dur-med) var(--ease), backdrop-filter var(--dur-med) var(--ease);
+}
+
+.navbar--scrolled {
+  background: rgba(250, 249, 246, 0.86);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--color-border);
+  box-shadow: 0 1px 0 rgba(11, 15, 20, 0.02);
+}
+
+.navbar__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 84px;
+}
+
+.navbar__logo {
+  font-family: var(--font-serif);
+  font-size: 19px;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
+.navbar__links {
+  display: none;
+  gap: 36px;
+  align-items: center;
+}
+
+.navbar__link {
+  font-size: 14.5px;
+  font-weight: 500;
+  color: var(--color-dark);
+  position: relative;
+  padding: 4px 0;
+}
+
+.navbar__link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 1px;
+  background: var(--color-accent);
+  transition: width var(--dur-fast) var(--ease);
+}
+
+.navbar__link:hover::after,
+.navbar__link--active::after {
+  width: 100%;
+}
+
+.navbar__cta {
+  display: none;
+}
+
+.navbar__burger {
+  position: relative;
+  z-index: 1002;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  color: var(--color-dark);
+  padding: 8px;
+}
+
+@media (min-width: 1024px) {
+  .navbar__links { display: flex; }
+  .navbar__cta { display: block; }
+  .navbar__burger { display: none; }
+}
+
+.navbar__mobile {
+  position: fixed;
+  inset: 0;
+  top: 84px;
+  background: var(--color-dark);
+  z-index: 1001;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+}
+
+.navbar__mobile-links {
+  display: flex;
+  flex-direction: column;
+  padding: 40px var(--gutter) 60px;
+  gap: 4px;
+}
+
+.navbar__mobile-link {
+  font-family: var(--font-serif);
+  font-size: 34px;
+  color: var(--color-warm-white);
+  padding: 14px 0;
+  border-bottom: 1px solid var(--color-border-dark);
+}
+
+.navbar__mobile-cta {
+  margin-top: 32px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .navbar { transition: none; }
+}
