@@ -37,23 +37,16 @@ export default function Footer() {
         <div className="footer__col">
           <h2 className="footer__heading">Contact</h2>
           <ul>
-            <li><a href="mailto:hello@veritaslegal.example">hello@veritaslegal.example</a></li>
-            <li><a href="tel:+15550142000">+1 (555) 014-2000</a></li>
-            <li>400 Meridian Avenue, Suite 2100</li>
+            <li><a href="mailto:contact@veritaslegal.in">contact@veritaslegal.in</a></li>
+            <li><a href="tel:+911140082000">+91 11 4008 2000</a></li>
+            <li>14, Connaught Place, New Delhi — 110001</li>
           </ul>
         </div>
       </div>
 
       <div className="container footer__bottom">
         <p>&copy; {year} Veritas Legal. All rights reserved.</p>
-        <p className="footer__demo-tag">A portfolio concept by SS Web Studio</p>
       </div>
-
-      <p className="demo-disclosure">
-        Veritas Legal is a fictional concept created by SS Web Studio for demonstration
-        purposes. Attorney profiles, testimonials, statistics, case studies, and results shown
-        are illustrative.
-      </p>
     </footer>
   )
 }

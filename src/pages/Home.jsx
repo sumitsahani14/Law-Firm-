@@ -14,7 +14,7 @@ export default function Home() {
   usePageMeta({
     title: 'Strategic Counsel. Clear Direction.',
     description:
-      'Veritas Legal is a fictional strategic counsel firm concept for founders and technology companies navigating complex business, technology, and commercial matters.',
+      'Veritas Legal is a strategic counsel firm for founders and technology companies navigating complex business, technology, and commercial matters.',
     path: '/',
   })
 

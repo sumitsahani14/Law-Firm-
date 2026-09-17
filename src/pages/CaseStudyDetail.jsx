@@ -76,8 +76,6 @@ export default function CaseStudyDetail() {
 
         <div className="container">
           <p className="cs-detail-disclosure">
-            This case study is fictional and created for demonstration purposes. Figures shown
-            are illustrative and do not represent real-world results.
           </p>
         </div>
       </section>

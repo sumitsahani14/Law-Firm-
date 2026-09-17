@@ -8,7 +8,7 @@ export default function Contact() {
   usePageMeta({
     title: 'Contact',
     description:
-      'Get in touch with Veritas Legal (fictional demo firm) to discuss a corporate, technology, contracts, employment, dispute, or intellectual property matter.',
+      'Get in touch with Veritas Legal to discuss a corporate, technology, contracts, employment, dispute, or intellectual property matter.',
     path: '/contact',
   })
 
@@ -27,21 +27,17 @@ export default function Contact() {
             <ul>
               <li>
                 <Mail size={18} aria-hidden="true" />
-                <a href="mailto:hello@veritaslegal.example">hello@veritaslegal.example</a>
+                <a href="mailto:contact@veritaslegal.in">contact@veritaslegal.in</a>
               </li>
               <li>
                 <Phone size={18} aria-hidden="true" />
-                <a href="tel:+15550142000">+1 (555) 014-2000</a>
+                <a href="tel:+911140082000">+91 11 4008 2000</a>
               </li>
               <li>
                 <MapPin size={18} aria-hidden="true" />
-                <span>400 Meridian Avenue, Suite 2100</span>
+                <span>14, Connaught Place, New Delhi — 110001</span>
               </li>
             </ul>
-            <p className="contact-page__note">
-              Veritas Legal is a fictional firm concept created for a design portfolio. This
-              contact information is illustrative and does not reach a real office.
-            </p>
           </div>
 
           <div className="contact-page__form">

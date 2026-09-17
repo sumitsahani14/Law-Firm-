@@ -1,15 +1,17 @@
 .navbar {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 100;
-  background: transparent;
+  background: rgba(250, 249, 246, 0.97);
   border-bottom: 1px solid transparent;
   transition: background var(--dur-med) var(--ease), border-color var(--dur-med) var(--ease),
     box-shadow var(--dur-med) var(--ease), backdrop-filter var(--dur-med) var(--ease);
 }
 
 .navbar--scrolled {
-  background: rgba(250, 249, 246, 0.86);
+  background: rgba(250, 249, 246, 0.97);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--color-border);
   box-shadow: 0 1px 0 rgba(11, 15, 20, 0.02);
@@ -71,6 +73,9 @@
   border: none;
   color: var(--color-dark);
   padding: 8px;
+  cursor: pointer;
+  z-index: 101;
+  position: relative;
 }
 
 @media (min-width: 1024px) {

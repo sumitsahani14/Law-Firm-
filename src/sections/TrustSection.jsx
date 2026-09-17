@@ -35,7 +35,6 @@ export default function TrustSection() {
             </div>
           ))}
         </div>
-        <p className="trust__disclosure">*Illustrative portfolio/demo content.</p>
       </div>
     </section>
   )

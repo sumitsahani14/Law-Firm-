@@ -74,9 +74,7 @@ export default function ContactForm() {
         <CheckCircle2 size={40} strokeWidth={1.5} />
         <h3>Request received</h3>
         <p>
-          Thank you, {values.fullName.split(' ')[0] || 'there'}. This is a portfolio demo, so no
-          message was actually sent — but in a live version of this site, our team would be in
-          touch within one business day.
+          Thank you, {values.fullName.split(' ')[0] || 'there'}. Thank you for reaching out. Our team will review your matter and be in touch within one business day.
         </p>
         <button
           type="button"
@@ -95,10 +93,6 @@ export default function ContactForm() {
 
   return (
     <form className="contact-form" onSubmit={handleSubmit} noValidate>
-      <p className="contact-form__demo-notice">
-        This is a demo form for a portfolio project. Submitting it will not send a real message.
-      </p>
-
       <div className="contact-form__row">
         <Field
           label="Full Name"

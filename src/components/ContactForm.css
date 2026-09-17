@@ -3,13 +3,7 @@
 }
 
 .contact-form__demo-notice {
-  font-size: 13.5px;
-  color: var(--color-muted);
-  background: var(--color-accent-soft);
-  border: 1px solid var(--color-border);
-  padding: 12px 16px;
-  border-radius: var(--radius-sm);
-  margin-bottom: 28px;
+  display: none;
 }
 
 .contact-form__row {

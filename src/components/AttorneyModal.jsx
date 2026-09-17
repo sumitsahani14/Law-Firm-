@@ -19,8 +19,6 @@ export default function AttorneyModal({ attorney, isOpen, onClose }) {
             ))}
           </ul>
           <p className="attorney-modal__disclosure">
-            Fictional profile created for demonstration purposes as part of this SS Web Studio
-            portfolio project.
           </p>
         </div>
       </div>

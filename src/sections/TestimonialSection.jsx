@@ -20,7 +20,6 @@ export default function TestimonialSection() {
           </footer>
         </motion.blockquote>
         <p className="testimonial__disclosure">
-          Fictional testimonial created for demonstration purposes.
         </p>
       </div>
     </section>

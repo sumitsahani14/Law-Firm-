@@ -18,7 +18,6 @@ export default function CaseStudies() {
       <PageHero
         eyebrow="Case Studies"
         title="How we approach complex matters."
-        description="Three illustrative matters showing how strategy, structure, and negotiation come together in practice."
       />
 
       <section className="case-studies-list section-pad">
@@ -29,8 +28,6 @@ export default function CaseStudies() {
             ))}
           </div>
           <p className="case-studies-list__disclosure">
-            All case studies are fictional and created for demonstration purposes. Metrics shown
-            are illustrative and do not represent real-world results.
           </p>
         </div>
       </section>

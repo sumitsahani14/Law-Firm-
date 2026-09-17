@@ -51,7 +51,7 @@ export default function About() {
   usePageMeta({
     title: 'About',
     description:
-      'Learn about the philosophy, approach, and fictional history behind the Veritas Legal concept — a portfolio demonstration by SS Web Studio.',
+      'Learn about the philosophy, approach, and history behind the Veritas Legal concept — a portfolio demonstration by SS Web Studio.',
     path: '/about',
   })
 
@@ -60,7 +60,7 @@ export default function About() {
       <PageHero
         eyebrow="About Veritas"
         title="Why Veritas exists."
-        description="A fictional firm built around a simple idea: legal counsel should make decisions easier, not harder."
+        description="A firm built around a simple idea: legal counsel should make decisions easier, not harder."
       />
 
       <section className="about-philosophy section-pad">
@@ -107,7 +107,7 @@ export default function About() {
           <SectionHeader
             eyebrow="Firm History"
             title="A brief, fictional timeline."
-            description="Illustrative history created for this demonstration project."
+            description="Our journey from founding to where we are today."
           />
           <ol className="about-timeline__list">
             {timeline.map((item, i) => (

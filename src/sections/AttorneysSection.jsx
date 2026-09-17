@@ -14,7 +14,6 @@ export default function AttorneysSection() {
         <SectionHeader
           eyebrow="Our People"
           title="Counsel who know your business."
-          description="A fictional team profile created for this demonstration project."
         />
         <div className="attorneys__grid">
           {attorneys.map((attorney) => (
@@ -22,7 +21,6 @@ export default function AttorneysSection() {
           ))}
         </div>
         <p className="attorneys__disclosure">
-          Attorney profiles are fictional and created for demonstration purposes only.
         </p>
       </div>
 

@@ -53,7 +53,6 @@ export default function FeaturedCaseStudySection() {
               ))}
             </div>
             <p className="featured-cs__disclosure">
-              Illustrative/demo content. Figures are not real-world results.
             </p>
 
             <Link to={`/case-studies/${featured.id}`} className="featured-cs__link">
